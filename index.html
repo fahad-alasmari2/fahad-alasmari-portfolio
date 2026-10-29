@@ -9,26 +9,32 @@
   <link rel="stylesheet" href="style.css" />
 
 <style id="brand-final-override">
-/* Only the header name: white serif letters on the existing black header. */
+/* Header name only: fine dotted ivory italic lettering, transparent background. */
 .site-header .brand .brand-mark,
 header.site-header a.brand span.brand-mark {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-weight: 500 !important;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
   font-style: italic !important;
-  font-size: 22px !important;
+  font-weight: 500 !important;
+  font-size: 21px !important;
   letter-spacing: -0.025em !important;
   line-height: 1.1 !important;
-  color: #f3f2ee !important;
-  background: transparent !important;
+  /* Small charcoal pinpoints within an ivory letter fill. */
   background-color: transparent !important;
+  background-image: radial-gradient(circle, rgba(20,20,20,.72) 0.48px, transparent 0.65px), linear-gradient(#f5f4f0, #f5f4f0) !important;
+  background-size: 2.8px 2.8px, 100% 100% !important;
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   white-space: nowrap;
 }
-.site-header .brand .brand-mark * {color:#f3f2ee !important;background:transparent !important;}
-@media(max-width:650px){.site-header .brand .brand-mark{font-size:19px!important}}
+@media(max-width:650px){.site-header .brand .brand-mark{font-size:18px!important}}
 </style>
 </head>
 <body>
