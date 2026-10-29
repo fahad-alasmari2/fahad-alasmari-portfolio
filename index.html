@@ -9,20 +9,22 @@
   <link rel="stylesheet" href="style.css" />
 
 <style id="brand-final-override">
-/* Brand name only: intentionally override older stylesheet rules. */
-header .brand .brand-mark, .brand .brand-mark {
+/* Change only the brand lettering; preserve the original dark header. */
+.site-header .brand .brand-mark {
   font-family: 'Playfair Display', Georgia, serif !important;
-  font-weight: 600 !important;
-  font-size: 26px !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.1 !important;
-  color: #080b0d !important;
-  background: #f3f2ee !important;
-  padding: 7px 12px !important;
-  border-radius: 2px;
-  white-space: nowrap;
+  font-weight: 500 !important;
+  font-size: 25px !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1 !important;
+  color: #f3f2ee !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
-@media(max-width:650px){.brand .brand-mark{font-size:19px!important;padding:6px 8px!important}}
+.site-header .brand .brand-mark span {color: #f3f2ee !important;}
+@media(max-width:650px){.site-header .brand .brand-mark{font-size:21px!important}}
 </style>
 </head>
 <body>
