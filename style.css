@@ -24,3 +24,23 @@
 .notebook-actions .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;text-align:center}
 .colab-help{max-width:650px;margin-top:16px!important;font-size:13px!important;line-height:1.7!important;color:#c9c3b7!important}
 .colab-help strong{color:#e9cb7b}
+
+
+/* Portfolio improvements: readable source code and larger visualizations */
+.nb-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+.nb-code-text{font-size:13px;line-height:1.7;max-height:620px;min-height:260px}
+.nb-figure-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none;overflow:visible;gap:18px}
+.nb-figure img{height:260px;object-fit:contain}
+.nb-figure{border-radius:10px;transition:border-color .2s,transform .2s}
+.nb-figure:hover{border-color:#eac55a;transform:translateY(-2px)}
+.sql-showcase-grid{grid-template-columns:1fr;gap:24px}
+.sql-gallery{grid-template-columns:repeat(3,minmax(0,1fr));max-height:none;overflow:visible}
+.sql-gallery .sql-image img{height:230px}
+.sql-code{font-size:13px;line-height:1.7;max-height:650px;min-height:260px;padding:22px}
+.image-lightbox{padding:64px 20px 28px}
+.image-lightbox figure{width:100%;max-width:98vw}
+.image-lightbox img{margin:auto;max-width:96vw;max-height:82vh;width:auto;height:auto;cursor:zoom-in}
+.image-lightbox img.zoomed{max-width:none;max-height:none;width:auto;height:auto;cursor:zoom-out}
+.image-lightbox figure:has(img.zoomed){max-height:84vh;overflow:auto}
+.image-lightbox figcaption{font-size:14px}
+@media(max-width:800px){.sql-gallery{grid-template-columns:1fr}.nb-figure-grid{grid-template-columns:1fr}.nb-figure img{height:240px}.sql-gallery .sql-image img{height:250px}}
