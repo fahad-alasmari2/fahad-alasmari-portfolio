@@ -9,22 +9,26 @@
   <link rel="stylesheet" href="style.css" />
 
 <style id="brand-final-override">
-/* Change only the brand lettering; preserve the original dark header. */
-.site-header .brand .brand-mark {
+/* Only the header name: white serif letters on the existing black header. */
+.site-header .brand .brand-mark,
+header.site-header a.brand span.brand-mark {
   font-family: 'Playfair Display', Georgia, serif !important;
   font-weight: 500 !important;
-  font-size: 25px !important;
+  font-style: italic !important;
+  font-size: 22px !important;
   letter-spacing: -0.025em !important;
-  line-height: 1 !important;
+  line-height: 1.1 !important;
   color: #f3f2ee !important;
   background: transparent !important;
+  background-color: transparent !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+  white-space: nowrap;
 }
-.site-header .brand .brand-mark span {color: #f3f2ee !important;}
-@media(max-width:650px){.site-header .brand .brand-mark{font-size:21px!important}}
+.site-header .brand .brand-mark * {color:#f3f2ee !important;background:transparent !important;}
+@media(max-width:650px){.site-header .brand .brand-mark{font-size:19px!important}}
 </style>
 </head>
 <body>
