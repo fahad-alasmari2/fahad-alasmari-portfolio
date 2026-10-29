@@ -47,3 +47,8 @@
 
 /* Saved analysis results — directly visible to all portfolio visitors */
 .results-section{scroll-margin-top:80px}.result-subheading{margin:30px 0 16px}.result-subheading h3{color:#d7b777;font-size:1.25rem;margin-bottom:8px}.result-subheading p{color:#a7a7a7;line-height:1.7;max-width:850px}.results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.result-figure{margin:0;border:1px solid rgba(215,183,119,.28);border-radius:16px;background:#151515;overflow:hidden}.result-figure button{width:100%;padding:0;border:0;background:#111;cursor:zoom-in;display:block;position:relative}.result-figure img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain}.result-figure button span{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.82);color:#e6c783;border:1px solid #8e7540;border-radius:8px;padding:7px 11px;font-size:.8rem}.result-figure figcaption{padding:13px 16px;color:#eee;font-size:.9rem}.sql-results .result-figure:first-child{grid-column:span 2}.sql-results .result-figure:first-child img{max-height:650px}@media(max-width:700px){.results-grid{grid-template-columns:1fr}.sql-results .result-figure:first-child{grid-column:auto}.result-figure img{max-height:none}}
+
+/* Header name: elegant serif typography matching the central headline; no gold */
+.site-header .brand-mark{font-family:'Playfair Display',Georgia,serif!important;font-size:25px!important;font-weight:500!important;letter-spacing:-.025em!important;line-height:1.1;background:#f3f2ee;color:#080b0d;padding:7px 11px;}
+.site-header .brand-mark span{color:#080b0d!important;}
+@media(max-width:620px){.site-header .brand-mark{font-size:20px!important;padding:6px 9px;}}
