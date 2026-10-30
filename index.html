@@ -6,38 +6,37 @@
   <meta name="theme-color" content="#080b0d" />
   <meta name="description" content="Fahad Alasmari — Data Analyst portfolio featuring Power BI, SQL, Python and HR analytics." />
   <title>Fahad Alasmari | Data Analyst</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
 
 <style id="brand-final-override">
-/* Header name only: fine dotted ivory italic lettering, transparent background. */
+/* Header name only: use the EXACT h2 em typography used by “projects.” */
 .site-header .brand .brand-mark,
 header.site-header a.brand span.brand-mark {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
   font-style: italic !important;
   font-weight: 500 !important;
-  font-size: 21px !important;
-  letter-spacing: -0.025em !important;
-  line-height: 1.1 !important;
-  /* Small charcoal pinpoints within an ivory letter fill. */
-  background-color: transparent !important;
-  background-image: radial-gradient(circle, rgba(20,20,20,.72) 0.48px, transparent 0.65px), linear-gradient(#f5f4f0, #f5f4f0) !important;
-  background-size: 2.8px 2.8px, 100% 100% !important;
-  background-position: 0 0 !important;
-  background-repeat: repeat !important;
+  font-synthesis: none !important;
+  font-size: 24px !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.12 !important;
+  /* white lettering with subtle but visible navy dotted perforations */
+  color: #ffffff !important;
+  -webkit-text-fill-color: transparent !important;
+  background: radial-gradient(circle, #061322 0 0.52px, #fff 0.82px 100%) 0 0 / 3.3px 3.3px repeat !important;
   -webkit-background-clip: text !important;
   background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
+  text-shadow: none !important;
+  filter: none !important;
   padding: 0 !important;
   border: 0 !important;
-  border-radius: 0 !important;
   box-shadow: none !important;
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
-@media(max-width:650px){.site-header .brand .brand-mark{font-size:18px!important}}
+@media(max-width:650px){.site-header .brand .brand-mark{font-size:19px!important}}
 </style>
 </head>
 <body>
+  <canvas class="holo-network cinematic-network" id="holo-network" aria-hidden="true"></canvas>
   <div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Fahad Alasmari home"><span class="brand-mark">FAHAD ALASMARI</span><span class="brand-caption">DATA ANALYST · PORTFOLIO</span></a>
@@ -51,12 +50,12 @@ header.site-header a.brand span.brand-mark {
       <p class="hero-description">I'm <strong>Fahad Alasmari</strong>, a data analytics professional focused on translating complex information into clear dashboards, measurable insights, and smarter decisions.</p>
       <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore My Work <span>↗</span></a><a class="btn btn-outline" href="Fahad_Alasmari_Resume.pdf" target="_blank" rel="noopener">View My Resume ↗</a></div>
       <div class="hero-stats"><div><strong>Power BI</strong><span>Interactive Reporting</span></div><div><strong>SQL & Python</strong><span>Data Analysis</span></div><div><strong>HR Analytics</strong><span>Featured Project</span></div></div>
-      <div class="hero-decoration" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="center-disc">FAHAD<br /><small>ALASMARI</small></div></div>
+      <div class="hero-decoration holo-globe-wrap" aria-hidden="true"><canvas id="holo-globe"></canvas></div>
     </section>
     <section id="about" class="section content-section"><div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>Analytical thinking.<br /><em>Business impact.</em></h2></div><div class="about-layout"><p>I work with data to uncover patterns, improve visibility, and support better business decisions. My experience includes Oracle HCM data auditing, workforce cost analysis, Power BI reporting, workflow automation, and predictive analytics web applications.</p><div class="quote-card"><span class="quote-symbol">“</span><p>Good analytics doesn't just show numbers. It helps people understand what to do next.</p><span class="quote-label">MY APPROACH</span></div></div></section>
     <section id="skills" class="section content-section"><div class="section-heading"><span class="section-index">02 / CAPABILITIES</span><h2>My <em>toolkit.</em></h2></div><div class="skill-grid"><article class="skill-card"><span class="skill-icon">◫</span><h3>Power BI</h3><p>Interactive dashboards, data modeling, DAX measures and visual storytelling.</p></article><article class="skill-card"><span class="skill-icon">⌘</span><h3>SQL</h3><p>Querying, joining and transforming relational data for analysis.</p></article><article class="skill-card"><span class="skill-icon">{ }</span><h3>Python</h3><p>Data preparation, exploration, analysis and visualization.</p></article><article class="skill-card"><span class="skill-icon">▦</span><h3>Excel</h3><p>Advanced spreadsheets, reporting, data cleaning and analysis.</p></article><article class="skill-card"><span class="skill-icon">⇄</span><h3>ETL</h3><p>Preparing and transforming raw data into analysis-ready datasets.</p></article><article class="skill-card"><span class="skill-icon">◈</span><h3>Data Visualization</h3><p>Clear, accessible reports that turn metrics into useful insights.</p></article></div></section>
     <section id="experience" class="section content-section"><div class="section-heading"><span class="section-index">03 / EXPERIENCE</span><h2>From data to <em>business impact.</em></h2></div><article class="experience-card"><div><span class="experience-tag">NOV 2025 — JUN 2026 · RIYADH</span><h3>HR Operations Specialist &amp; Data Analyst</h3><p class="muted">Pulse by Solution · Tamheer Program</p><div class="tags"><span>Oracle HCM</span><span>Excel</span><span>Power BI</span><span>Automation</span><span>Predictive Analytics</span></div></div><div class="experience-details"><ul class="experience-list"><li>Audited and consolidated HR records in Excel and Oracle HCM to improve data quality.</li><li>Analyzed workforce costs against budgets to support expense tracking and operational decisions.</li><li>Developed interactive Power BI dashboards for HR and management reporting.</li><li>Built an internal web-based invoice tracking and validation platform to reduce manual entry errors.</li><li>Developed a company-focused predictive analytics website to support forecasting and data-driven planning.</li></ul><p class="muted small">Professional experience and role details are based on the provided resume; the predictive web project was added from your description.</p></div></article></section>
-    <section id="projects" class="section content-section"><div class="section-heading"><span class="section-index">04 / FEATURED PROJECTS</span><h2>Selected <em>projects.</em></h2><p class="section-subtitle">Real, hands-on projects across business intelligence, SQL Server, Python, and predictive analytics.</p></div><div class="project-top"><div class="project-label"><span class="live-dot"></span> LIVE INTERACTIVE REPORT</div><div class="tags"><span>Power BI</span><span>DAX</span><span>SQL</span><span>ETL</span></div></div><div class="report-shell"><div class="report-bar"><span class="report-light"></span><span>HR Analysis — Interactive Power BI</span><a id="reportExternalTop" href="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" target="_blank" rel="noopener noreferrer">Open full screen ↗</a></div><div class="report-frame"><iframe title="HR Analysis interactive Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div><div class="project-footer"><p><strong>Note:</strong> This is a portfolio demonstration built with synthetic data. No real employee records are represented.</p><a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" target="_blank" rel="noopener noreferrer">Launch Dashboard ↗</a></div>
+    <section id="projects" class="section content-section"><div class="holo-cubes-ambient" aria-hidden="true"><canvas id="holo-cubes"></canvas></div><div class="section-heading"><span class="section-index">04 / FEATURED PROJECTS</span><h2>Selected <em>projects.</em></h2><p class="section-subtitle">Real, hands-on projects across business intelligence, SQL Server, Python, and predictive analytics.</p></div><div class="project-top"><div class="project-label"><span class="live-dot"></span> LIVE INTERACTIVE REPORT</div><div class="tags"><span>Power BI</span><span>DAX</span><span>SQL</span><span>ETL</span></div></div><div class="report-shell"><div class="report-bar"><span class="report-light"></span><span>HR Analysis — Interactive Power BI</span><a id="reportExternalTop" href="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" target="_blank" rel="noopener noreferrer">Open full screen ↗</a></div><div class="report-frame"><iframe title="HR Analysis interactive Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div><div class="project-footer"><p><strong>Note:</strong> This is a portfolio demonstration built with synthetic data. No real employee records are represented.</p><a class="btn btn-primary" href="https://app.powerbi.com/view?r=eyJrIjoiOTYzMDE5YjItZmY1Yi00ZWJhLTg3ZDktN2MxZGUzOTU5MjE2IiwidCI6IjNlMDNiMmEzLWNkM2EtNDZmNy1iMDUxLTc2YjQzMzQ0Zjk5MyIsImMiOjl9&pageName=9f243520100f1065a726" target="_blank" rel="noopener noreferrer">Launch Dashboard ↗</a></div>
     <div class="sql-case"><h3>SQL Server · HR Analytics Data Model</h3><p>Built and queried a relational HR analytics database using foreign-key relationships, department-level employee and salary aggregations, monthly payroll summaries, and month-over-month growth calculations using SQL window functions. The Power BI report uses synthetic employee data for demonstration.</p><div class="sql-metrics"><span>5,000 employees</span><span>10 departments</span><span>170,651 payroll records</span><span>102,078 overtime records</span><span>SQL JOIN · GROUP BY · LAG</span></div></div>
 <div class="sql-showcase" id="sql-showcase"><div class="sql-showcase-header"><div><span class="section-index">SQL / QUERY SHOWCASE</span><h3>Behind the dashboard: <em>SQL Server.</em></h3><p>Original HR Analytics and Sales SQL queries, plus clearly labeled illustrative Superstore analyses. Explore original HR queries and example Sales Analytics queries based on the SuperstoreSales dataset, alongside SQL Server screenshots.</p></div><span class="sql-pill">T-SQL · SQL Server</span></div><div class="sql-showcase-grid"><div class="sql-gallery"><button class="sql-image gallery-trigger" type="button" data-img="sql-server-analysis.png" data-caption="HR Analytics — Department Analysis"><img src="sql-server-analysis.png" alt="SQL Server HR Analytics query and results" loading="lazy"/><span>HR Analytics · Department Analysis ⤢</span></button><button class="sql-image gallery-trigger" type="button" data-img="sql-payroll-growth.png" data-caption="HR Analytics — Payroll Growth"><img src="sql-payroll-growth.png" alt="SQL Server payroll growth query and results" loading="lazy"/><span>HR Analytics · Payroll Growth ⤢</span></button><button class="sql-image gallery-trigger" type="button" data-img="sql-superstore.png" data-caption="Superstore Sales — SQL Server"><img src="sql-superstore.png" alt="Superstore Sales data in SQL Server" loading="lazy"/><span>Superstore Sales · SQL Dataset ⤢</span></button></div><div class="sql-code-panel"><div class="code-tabs" role="tablist" aria-label="SQL query examples"><button class="code-tab active" data-query="department" aria-selected="true" type="button">Department Analysis</button><button class="code-tab" data-query="growth" aria-selected="false" type="button">Payroll Growth</button><button class="code-tab" data-query="sales-original" aria-selected="false" type="button">SalesAnalyticDB · Original</button><button class="code-tab" data-query="superstore-original" aria-selected="false" type="button">SuperstoreSales · Original</button><button class="code-tab" data-query="sales-region" aria-selected="false" type="button">Sales by Region</button><button class="code-tab" data-query="sales-segment" aria-selected="false" type="button">Sales by Segment</button><button class="code-tab" data-query="sales-monthly" aria-selected="false" type="button">Monthly Sales</button></div><div class="code-toolbar"><span id="querySource">HR Analytics · Original T-SQL</span><button type="button" id="copySql">Copy SQL</button></div><pre class="sql-code"><code id="sqlCode">USE HR_Analytics_2026;
 GO
@@ -163,5 +162,6 @@ from sklearn.ensemble import RandomForestClassifier</pre><span>Source code · Ju
 
 <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="SQL screenshot viewer" hidden><button class="lightbox-close" type="button" id="lightboxClose" aria-label="Close image">✕</button><figure><img id="lightboxImage" alt="Expanded SQL screenshot"/><figcaption id="lightboxCaption"></figcaption></figure></div>
 <script src="script.js"></script>
+<script src="holograms.js?v=3" defer></script>
 </body>
 </html>

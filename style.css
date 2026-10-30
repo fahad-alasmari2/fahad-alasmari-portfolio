@@ -47,3 +47,44 @@
 
 /* Saved analysis results — directly visible to all portfolio visitors */
 .results-section{scroll-margin-top:80px}.result-subheading{margin:30px 0 16px}.result-subheading h3{color:#d7b777;font-size:1.25rem;margin-bottom:8px}.result-subheading p{color:#a7a7a7;line-height:1.7;max-width:850px}.results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.result-figure{margin:0;border:1px solid rgba(215,183,119,.28);border-radius:16px;background:#151515;overflow:hidden}.result-figure button{width:100%;padding:0;border:0;background:#111;cursor:zoom-in;display:block;position:relative}.result-figure img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain}.result-figure button span{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.82);color:#e6c783;border:1px solid #8e7540;border-radius:8px;padding:7px 11px;font-size:.8rem}.result-figure figcaption{padding:13px 16px;color:#eee;font-size:.9rem}.sql-results .result-figure:first-child{grid-column:span 2}.sql-results .result-figure:first-child img{max-height:650px}@media(max-width:700px){.results-grid{grid-template-columns:1fr}.sql-results .result-figure:first-child{grid-column:auto}.result-figure img{max-height:none}}
+
+/* Cinematic holographic palette. Header name styling remains untouched. */
+:root{--bg:#050917;--panel:#0a1225;--panel2:#101c32;--gold:#4bd9ff;--lightgold:#bb80ff;--text:#eef7ff;--muted:#a2b5cf;--line:rgba(74,196,255,.24)}
+body{background:radial-gradient(ellipse at 80% 5%,#101035 0%,transparent 38%),#050917}
+.site-header{background:rgba(4,9,22,.94);border-bottom-color:rgba(69,198,255,.14)}
+.glow-one{background:#16bfff;opacity:.13}.glow-two{background:#a453ff;opacity:.13}
+.hero{isolation:isolate}.hero>.holo-network{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.72}
+.hero .holo-globe-wrap{position:relative;overflow:visible;min-height:320px;display:flex;align-items:center;justify-content:center}
+.holo-globe-wrap canvas{width:100%;height:100%;min-height:320px;display:block;filter:drop-shadow(0 0 24px rgba(50,160,255,.22))}
+#projects{position:relative;isolation:isolate}.holo-cubes-ambient{position:absolute;right:0;top:0;width:min(46%,560px);height:460px;z-index:-1;pointer-events:none;opacity:.64}.holo-cubes-ambient canvas{width:100%;height:100%}
+.btn-primary{background:linear-gradient(120deg,#1caadf,#8c64f2)!important;color:#fff!important;border-color:transparent!important}
+::selection{background:#3758a4;color:#fff}
+@media(max-width:760px){.holo-cubes-ambient{width:100%;height:330px;opacity:.22}.hero .holo-globe-wrap{min-height:280px}.holo-globe-wrap canvas{min-height:280px}}
+@media(prefers-reduced-motion:reduce){.holo-network,.holo-cubes-ambient{opacity:.22}}
+
+/* Hologram repair: clear cyan/blue, visible globe in first screen. */
+:root{--bg:#030b17;--panel:#081827;--panel2:#0b2235;--gold:#38cfff;--lightgold:#7fe5ff;--text:#f1faff;--muted:#a7c1d5;--line:rgba(56,207,255,.26)}
+body{background:radial-gradient(ellipse at 83% 12%,rgba(11,72,117,.24),transparent 42%),#030b17}
+.glow-two{background:#008fc9}.hero .holo-globe-wrap{position:absolute!important;right:2%!important;top:120px!important;width:clamp(320px,35vw,490px)!important;height:450px!important;min-height:450px!important;z-index:0!important;opacity:1!important;pointer-events:auto;}
+.hero .holo-globe-wrap canvas{width:100%!important;height:100%!important;min-height:0!important;filter:drop-shadow(0 0 25px rgba(25,190,255,.42))}
+.hero> :not(.holo-globe-wrap):not(.holo-network){position:relative;z-index:1}
+.hero h1{max-width:780px}.hero-description{max-width:610px}
+h1 em,h2 em{color:#77dcff!important}
+.btn-primary{background:linear-gradient(115deg,#087cb5,#25c5ed)!important}
+@media(max-width:1100px){.hero .holo-globe-wrap{right:-3%!important;width:340px!important;opacity:.62!important}.hero h1{max-width:780px}}
+@media(max-width:760px){.hero .holo-globe-wrap{top:95px!important;right:-115px!important;width:320px!important;height:360px!important;min-height:360px!important;opacity:.33!important;pointer-events:none}.hero> :not(.holo-globe-wrap):not(.holo-network){z-index:2}}
+
+/* Cinematic ambient hologram: visible but never blocks reading or controls */
+body{background:#030b17!important}
+.cinematic-network{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;z-index:0!important;pointer-events:none!important;opacity:.65!important}
+.site-header,.section,footer{position:relative;z-index:1}
+.site-header{position:sticky!important;z-index:30!important}
+.hero{min-height:790px!important;overflow:hidden;background:radial-gradient(ellipse at 83% 42%,rgba(0,121,184,.15),transparent 48%)}
+.hero h1{max-width:690px!important;font-size:clamp(52px,5.25vw,80px)!important}
+.hero .holo-globe-wrap{position:absolute!important;top:130px!important;right:0!important;width:clamp(410px,39vw,610px)!important;height:550px!important;min-height:550px!important;opacity:1!important;z-index:1!important;pointer-events:auto!important;filter:drop-shadow(0 0 34px rgba(0,205,255,.3))}
+.hero .holo-globe-wrap canvas{width:100%!important;height:100%!important;display:block!important;min-height:0!important}
+.hero>.eyebrow,.hero>h1,.hero>.hero-description,.hero>.hero-actions,.hero>.hero-stats{position:relative;z-index:3}
+.hero>.hero-description{max-width:520px!important}
+.holo-cubes-ambient{opacity:.6!important;pointer-events:none!important}
+@media(max-width:1050px){.hero .holo-globe-wrap{right:-90px!important;opacity:.62!important}.hero h1{max-width:670px!important}}
+@media(max-width:760px){.hero{padding-top:85px!important;min-height:860px!important}.hero .holo-globe-wrap{top:400px!important;right:calc(50% - 230px)!important;width:460px!important;height:400px!important;min-height:400px!important;opacity:.8!important}.hero h1{font-size:clamp(42px,10vw,66px)!important}.hero-stats{margin-top:430px!important}.cinematic-network{opacity:.35!important}}
